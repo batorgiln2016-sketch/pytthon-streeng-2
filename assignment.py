@@ -36,13 +36,14 @@ def get_initials(text):
 
 # Exercise 4
 def extract_year(text):
-    v = "1234567890"
-    f = ""
-    for char in text:
-        if char in v:
-            f = f + char
-    return f
-
+    words = text.split()
+        for word in words:
+            digits = ""
+            for char in word:
+                if char in "0123456789":
+                    digits = digits + char
+            if len(digits) == 4:
+                return digits
 
 # Exercise 5
 def is_palindrome(text):
