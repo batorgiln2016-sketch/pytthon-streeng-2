@@ -13,8 +13,6 @@ def is_valid_email(text):
         return "Valid"
     else:
         return "Invalid"
-
-
 # Exercise 2
 def remove_vowels(text):
     v = "aioeuAIOUE"
@@ -23,8 +21,6 @@ def remove_vowels(text):
         if char not in v:
             f = f + char
     return f
-
-
 # Exercise 3
 def get_initials(text):
     words = text.split()
@@ -32,8 +28,6 @@ def get_initials(text):
     for word in words:
         i = i + word[0].upper() + '.'
     return i
-
-
 # Exercise 4
 def extract_year(text):
     words = text.split()
@@ -45,8 +39,6 @@ def extract_year(text):
         if len(digits) == 4:
             return digits
     return False
-
-
 # Exercise 5
 def is_palindrome(text):
     cleaned = ""
