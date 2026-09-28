@@ -36,7 +36,7 @@ def extract_year(text):
     v = "1234567890"
     f = ""
     for char in text:
-        if char not in v:
+        if char in v:
             f = f + char
     return f
 pass
